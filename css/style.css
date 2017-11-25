@@ -1,0 +1,105 @@
+	<style>
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  display: block;
+  padding: 10px;
+  background-color: #000;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+  margin-top: 0px;
+  border-bottom: solid 1px #ccc;
+  color: #2c966d;
+}
+
+#footer
+{
+	background-color: #000;
+	margin: 50px;
+}
+
+#wrapper {
+  -webkit-perspective: 1100px;
+  -webkit-perspective-origin: 50% 300px;
+  perspective: 1100px;
+  perspective-origin: 50% 300px;
+  margin-top: 120px;
+}
+
+#cube {
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 2s ease;
+  transform-style: preserve-3d;
+  transition: all 2s ease;
+}
+
+.face {
+  position: absolute;
+  height: 360px;
+  width: 360px;
+  padding: 20px;
+  background-color: white;
+  border: solid 1px #ffff00;
+   box-shadow: 1px 1px 1px 1px #00b386;
+}
+
+
+#cube .one {
+  -webkit-transform: rotateX(90deg) translateZ(200px);
+  transform: rotateX(90deg) translateZ(200px);
+}
+
+#cube .two {
+  -webkit-transform: translateZ(200px);
+  transform: translateZ(200px);
+}
+
+#cube .three {
+  -webkit-transform: rotateY(90deg) translateZ(200px);
+  transform: rotateY(90deg) translateZ(200px);
+}
+
+#cube .four {
+  -webkit-transform: rotateY(180deg) translateZ(200px);
+  transform: rotateY(180deg) translateZ(200px);
+}
+
+#cube .five {
+  -webkit-transform: rotateY(-90deg) translateZ(200px);
+  transform: rotateY(-90deg) translateZ(200px);
+}
+
+#cube .six {
+  -webkit-transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
+  transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
+}
+</style>

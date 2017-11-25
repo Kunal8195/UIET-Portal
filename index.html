@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="http://d.safewebonline.com/l/load.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<title>UIET | Mechanical Department</title>
+	<meta name="description">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+	
+</head>
+
+<style>
+body
+{
+background-color: #a3c2c2;
+}
+</style>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar1" >
+      <ul class="nav navbar-nav" style="margin-left:35%">
+        <li><a  id="homelink">About Us</a></li>
+		 <li ><a  id="aboutLink">Udyami</a></li>
+		  <li><a  id="newsLink">Goonj</a></li>
+		   <li ><a  id="contactLink">Effi Cycle</a></li>
+               </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div id="wrapper">
+  <div id="cube">
+    <div class="face one"></div>
+    <div class="face two">
+      <h1><center>About Us</center></h1><br>
+     <img src="images/uiet2.jpg" width="360px">
+	 <p> <center> UIET Panjab University, Chandigarh </center> </p>
+	<center> <a href="index.php"><button type="button" class="btn btn-primary btn-lg">Know More About Us</button></a>
+	</center>
+    </div>
+    <div class="face three">
+      <h1><center>Udyami</center></h1><br>
+    <img src="images/udyami.png" width="360px">
+	 <p> <center> UDYAMI 2016, UIET Chandigarh</center> </p>
+	<center> <a href="index.php"><button type="button" class="btn btn-primary btn-lg">Know More About Us</button></a>
+	</center>
+	</div>
+    <div class="face four">
+      <h1><center>Goonj</center></h1><br>
+      <img src="images/goonj.jpg" width="360px">
+	 <p> <center> Goonj 2016, UIET Chandigarh</center> </p>
+	<center> <a href="index.php"><button type="button" class="btn btn-primary btn-lg">Know More About Us</button></a>
+	</center>
+	</div>
+    <div class="face five">
+      <h1><center>Effi Cycle</center></h1><br>
+     <img src="images/effi.jpg" width="360px">
+	 <p> <center> Effi Cycle 2015, UIET Chandigarh</center> </p>
+	 	 	<center> <a href="index.php"><button type="button" class="btn btn-primary btn-lg">Know More About Us</button></a>
+	</center>
+    </div>
+    <div class="face six"></div>
+  </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script>
+$(document).ready(function(){
+    
+    $("#homelink").click(function(){
+       calcRotation(0);
+    });
+
+    $("#aboutLink").click(function(){
+      calcRotation(90);
+    });
+    
+    $("#newsLink").click(function(){
+       calcRotation(180);
+    });
+
+    $("#contactLink").click(function(){
+        calcRotation(270);
+    });
+	 
+    function calcRotation(roty){
+           $("#cube").css("transform", "rotateY(-" + roty + "deg)");
+    }
+});
+</script>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+  <!--footer-->
+
+<nav class= "navbar navbar-inverse" style="margin-top:60px">
+<p class="navbar-text">
+<small>
+<font color="#fff"><b>Copyrights © 2016, </b><br>All rights reserved with UIET, Panjab University, Chandigarh.<br>
+Developed & Maintained by Akash Upadhyay & Pankaj Grag
+</font>
+</p>
+</small>
+</nav>
+
+  
+</body>	
+</html>
